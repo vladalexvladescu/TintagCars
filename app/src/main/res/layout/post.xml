@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/posts_layout_parent"
+android:orientation="vertical"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@android:color/white">
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/title_Top"
+    android:background="@drawable/list_item_border">
+
+    <RelativeLayout
+        android:layout_below="@+id/imagePost"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/carDescription"
+        android:background="@color/gray">
+        <TextView
+            android:text="Land Rover Descovery 3.0L"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textCarType" />
+
+        <TextView
+            android:text="2015 | Cork | 7,767 M - 12.500KM | 2,7 Diesel |"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/textCarType"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textCarDetails" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/carDetails"
+        android:layout_height="80dp"
+
+        android:layout_width="match_parent"
+        android:background="@color/orange"
+        android:id="@+id/commentSection">
+        <TextView
+            android:text="My comment"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myComment"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/edit_comment"
+            android:id="@+id/editComment" />
+
+        <EditText
+            android:textSize="12sp"
+            android:text=""
+            android:hint="Add a comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/autoCompleteTextViewComment"
+            android:layout_below="@+id/myComment"
+            android:layout_alignLeft="@+id/myComment"
+            android:layout_alignStart="@+id/myComment" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/profile"
+        android:id="@+id/imagePost"
+        android:layout_alignParentTop="true"
+        />
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/carDetails"
+        android:layout_below="@+id/carDescription"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text="Blackrock Motor Company"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginBottom="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/companyName" />
+
+        <TextView
+            android:text="Audi North Dublin 11"
+            android:layout_below="@+id/companyName"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationText" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/icon_location"
+            android:id="@+id/location"
+            android:layout_alignBottom="@+id/locationText"
+            android:layout_alignLeft="@+id/companyName"
+            android:layout_alignStart="@+id/companyName" />
+        <TextView
+            android:text="New car"
+            android:layout_below="@+id/locationText"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newCar" />
+
+        <TextView
+            android:text="$50,000"
+            android:layout_below="@+id/locationText"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price" />
+        <TextView
+            android:text=" $-5,000"
+            android:layout_below="@+id/newCar"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/discount" />
+        <View
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:id="@+id/gray_separator"
+            android:layout_below="@+id/tradeIn"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <TextView
+            android:text="TOTAL PAYABLE"
+            android:layout_below="@+id/tradeIn"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalPayable" />
+        <TextView
+            android:text="$50,000"
+            android:layout_below="@+id/tradeIn"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalPrice" />
+
+        <TextView
+            android:text="Your Trade-In*"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tradeIn"
+            android:layout_alignBaseline="@+id/discount"
+            android:layout_alignBottom="@+id/discount"
+            android:layout_alignParentLeft="true"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_below="@+id/totalPayable"
+            android:background="@drawable/triangle"
+            android:id="@+id/triangle" />
+
+        <Button
+            android:text="Phone: 12 0304050"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/phone"
+
+            android:layout_alignTop="@+id/companyName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+</LinearLayout>

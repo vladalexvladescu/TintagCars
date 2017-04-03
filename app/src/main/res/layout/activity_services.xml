@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/title_trade_in"
+        android:id="@+id/imageViewTradeTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="vertical" >
+        <TextView
+
+            android:text="Services"
+            android:layout_below="@+id/locationText"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="7dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSellMyCar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!--
+        This layout encapsules the list and the button that must be immediately
+        below the list with a wrap_content height, so the list plus the button
+        fills only as much space as they need (if the list is not big enouth to
+        fill the entire screen).
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+            Layout with varaible size with a list inside.
+            Using layout_weight tells android that this layout should not grow
+            greater then the screen, but uses only the free space.
+             -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:text="@string/contest_giveaways"
+
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        android:id="@+id/textCarType" />
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/gray_separator"
+        android:layout_below="@+id/posts_area"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/menu_layout"
+
+        android:layout_below="@+id/posts_area"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gray_separator"
+
+        android:fitsSystemWindows="true"
+
+        >
+        <ImageView
+            android:id="@+id/search_car_image_button"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/search"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/sell_car_image_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="23dp"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="11dp"
+            android:clickable="true"
+
+            android:src="@drawable/sell_my_car"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/profile_image_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/profile"
+            android:layout_marginLeft="20dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="11dp"
+            android:clickable="true"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/services_image_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/services"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/more_image_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:src="@drawable/more"
+
+
+
+
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

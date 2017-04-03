@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TintagCars</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="my_trade_in_offers">My Trade-In Offers</string>
+    <string name="trade_in">TRADE-IN</string>
+    <string name="contest_giveaways" formatted="false">*Terms &amp; conditions may apply.</string>
+    <string name="rover">Land Rover is a car brand that specialises in four-wheel-drive.[9]</string>
+</resources>

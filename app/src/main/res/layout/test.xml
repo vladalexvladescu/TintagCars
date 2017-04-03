@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/RecordStudy_StudyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sds"
+        android:textSize="20sp" />
+
+    <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!--
+        This layout encapsules the list and the button that must be immediately
+        below the list with a wrap_content height, so the list plus the button
+        fills only as much space as they need (if the list is not big enouth to
+        fill the entire screen).
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+            Layout with varaible size with a list inside.
+            Using layout_weight tells android that this layout should not grow
+            greater then the screen, but uses only the free space.
+             -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!--
+                Inside this limited height layout, there is a list with height
+                wrap_content so it can grow as much as it needs INSIDE the
+                layout (through scrolling).
+                -->
+                <ListView
+                    android:id="@+id/RecordStudy_StudyList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- Button immediately below the list -->
+
+
+        </LinearLayout>
+
+        <!-- Space between the list and the footer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!-- Footer -->
+    <Button
+        android:id="@+id/RecordStudy_ConfirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ddd" />
+
+</LinearLayout>

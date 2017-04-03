@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/title_trade_in"
+        android:id="@+id/imageViewTradeTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginTop="10dp"
+
+            android:background="@android:color/holo_blue_dark"
+            android:orientation="vertical" >
+            <TextView
+
+                android:text="Sell my Car"
+
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="7dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textSellMyCar" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <Button
+                android:text="Get url from web"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:id="@+id/getUrlFromWeb"
+
+                />
+
+            <EditText
+                android:hint="Paste here the image URL"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:id="@+id/urlEditText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Car type"
+                android:ems="10"
+                android:id="@+id/carTypeEditText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="number"
+
+                android:ems="10"
+                android:text=""
+                android:hint="Engine size"
+                android:id="@+id/engineSize" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="number"
+
+                android:text=""
+                android:hint="Km"
+                android:ems="10"
+                android:id="@+id/kmEditText7" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="number"
+
+                android:text=""
+                android:hint="Year"
+                android:ems="10"
+                android:id="@+id/yearEditText7" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="text"
+
+                android:ems="10"
+                android:text=""
+                android:hint="Company name"
+                android:id="@+id/companyNameEditText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:hint="Phone"
+                android:ems="15"
+                android:id="@+id/phoneEditText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="text"
+                android:text=""
+                android:hint="Location"
+                android:ems="15"
+                android:id="@+id/locationEditText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+
+                android:inputType="number"
+                android:text=""
+                android:hint="Price"
+                android:ems="15"
+                android:id="@+id/priceEditText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="number"
+                android:text=""
+
+                android:hint="Your Trade-In"
+                android:ems="10"
+                android:id="@+id/tradeInEditText" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:text="PREVIEW"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/prewiev"
+
+        />
+
+<View
+    android:layout_width="match_parent"
+    android:id="@+id/gray_separator"
+    android:layout_below="@+id/posts_area"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+
+
+
+<LinearLayout
+    android:id="@+id/menu_layout"
+
+    android:layout_below="@+id/posts_area"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/gray_separator"
+
+    android:fitsSystemWindows="true"
+
+    >
+    <ImageView
+        android:id="@+id/search_car_image_button"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/search"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+
+
+        />
+
+
+    <ImageView
+        android:id="@+id/sell_car_image_button"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="23dp"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="11dp"
+        android:clickable="true"
+
+        android:src="@drawable/sell_my_car"
+
+
+        />
+
+
+    <ImageView
+        android:id="@+id/profile_image_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/profile"
+        android:layout_marginLeft="20dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="11dp"
+        android:clickable="true"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/services_image_button"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/services"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/more_image_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:src="@drawable/more"
+
+
+
+
+
+        />
+
+
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>
